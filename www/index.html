@@ -31,10 +31,12 @@
         var sings=[
           'やぎ座','みずがめ座','うお座','おひつじ座','おうし座','ふたご座','かに座','しし座','おとめ座','てんびん座','さそり座','いて座'
         ];
-        var sign = "aaa";
+
+        
+        var sign = '';
         var month = $("#month").val();
         var day = $("#day").val();
-        if (day <= signDay[1]){
+        if (day <= signDay[month]){
           //前半
           sign = sings[month-1];
         }else{
