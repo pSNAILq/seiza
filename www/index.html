@@ -43,7 +43,7 @@
           //後半
           sign = sings[(month)%12];        
         }
-        alert(sign);
+        $(result).text("あなたの星座は"+sign+"です");
     }
   </script>
 </head>
@@ -53,12 +53,24 @@
       <h1>星座判定</h1>
     </header>
     <section data-role="content">
-      月
+      <div class="testChar">
+        <p class="deco">月</p>
+        </div>
+      
+
       <input type="text" id="month" class="input-text">
-      日
+      <div class="testChar">
+        <p class="deco"> 日</p>
+        </div>
+      
       <input type="text" id="day" class="input-text">
 
-      <a class="button" onclick="calculate();">判定</a>
+      <a href="#" onclick="calculate();" class="btn-flat-vertical-border">
+        <p class="hantei"> 判定</p>
+        </a>
+
+      <div id="result">
+      </div>
     </section>
 
     <!--
